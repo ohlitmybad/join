@@ -196,6 +196,27 @@ h2 {
 font-size: 21px        
 }
 
+            .desktop-text {
+  display: inline;
+}
+
+/* Styles for mobile */
+.mobile-text {
+  display: none;
+}
+
+/* Media query for screen sizes less than or equal to 768px (you can adjust this value as needed) */
+@media (max-width: 768px) {
+  /* Hide desktop text on mobile */
+  .desktop-text {
+    display: none;
+  }
+
+  /* Show mobile text on mobile */
+  .mobile-text {
+    display: inline;
+  }
+}
 
 
     </style>
@@ -203,7 +224,12 @@ font-size: 21px
   <div class="logo">
     <a href="http://datamb.football">
         <img src="https://i.imgur.com/8MH80Jo.png" alt="DataMB Pro" /></a>
-    <div class="logo-text"><a href="http://datamb.football">Pro</a></div>
+<div class="logo-text">
+  <a href="http://datamb.football">
+    <span class="desktop-text">DataMB Pro</span>
+    <span class="mobile-text">Pro</span>
+  </a>
+</div>
   </div>
   <nav class="navigation"> 
     <a href="http://datamb.football/signup/" class="button">Subscribe for 8€ /month</a>
