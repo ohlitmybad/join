@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -314,8 +315,18 @@ Cursor: pointer;
         });
 
         proceedBtn.addEventListener('click', () => {
-            subscriptionFrame.src = 'https://datamb.football/signup';
-        });
+        subscriptionFrame.src = 'https://datamb.football/signup';
+
+        // Check if the user is on a desktop device
+        if (window.innerWidth >= 1024) {
+            // Check if the page is scrolled to the top
+            if (window.scrollY === 0) {
+                // Scroll down by 200px
+                window.scrollBy(0, 500);
+            }
+        }
+    });
+
 
         function expandTerms() {
             expandableTerms.style.display = 'block';
