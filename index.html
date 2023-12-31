@@ -262,6 +262,36 @@ Cursor: pointer;
     text-decoration: underline; /* Add underline to the link */
 }
 
+
+/* Center the "What's Included" button */
+#whatsIncludedBtn {
+  display: block;
+  margin: 0 auto;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 15px;
+  color: white; /* Set link color */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+
+}
+
+
+
+/* Add these styles to center the image */
+#imageContainer {
+  display: none;
+  text-align: center;
+}
+
+#imageContainer img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+
     </style>
 <header class="header">
   <div class="logo">
@@ -292,10 +322,29 @@ Cursor: pointer;
    <div class="image-container">
         <img src="https://pbs.twimg.com/media/F53lVvbW4AMjTe2?format=jpg&name=large" alt="30+ leagues, multiple seasons, access to plot and search tools. Premier League, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Primeira Liga, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Superleague, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Serbian SuperLiga, Japanese J-League 1, Korean K-League 1, MLS, Liga MX, Brazilian Serie A, Argentina Primera Division, Uruguay Primera Division">
     </div><br>
+<button id="whatsIncludedBtn" onclick="toggleImage()">Full features +</button>
+<br>
+<div id="imageContainer">
+  <img src="https://pbs.twimg.com/media/GAocmfLWIAAUhpL?format=jpg&name=small" alt="">
+</div>
+
+<script>
+  var imageContainer = document.getElementById('imageContainer');
+
+  function toggleImage() {
+    if (imageContainer.style.display === 'none' || imageContainer.style.display === '') {
+      imageContainer.style.display = 'block';
+    } else {
+      imageContainer.style.display = 'none';
+    }
+
+  }
+</script>
+
 
     <div class="terms">
+
    
-       
         <label class="terms-checkbox">
             <input type="checkbox" id="agreeCheckbox">
                I agree to the <a href="https://datamb.football/tos" target="_blank">Terms and Conditions</a>
@@ -303,7 +352,7 @@ Cursor: pointer;
         </label>
     </div><br>
 
-    <button id="proceedBtn" disabled>SUBSCRIBE</button><br><br>
+    <button id="proceedBtn" disabled>JOIN FREE TRIAL</button><br><br>
 
     <iframe id="subscriptionFrame" src="" frameborder="0"></iframe>
 
