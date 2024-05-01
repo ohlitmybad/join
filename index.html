@@ -9,6 +9,7 @@
 <html>
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=no"">
+        <meta name="description" content="Access 30+ leagues, more seasons, tools and metrics. Explore and visualize football data with DataMB Pro : Radar, Plot, Search, Rank, Index and Chat tools for Premier League, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Primeira Liga, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Superleague, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Serbian SuperLiga, Japanese J-League 1, Korean K-League 1, MLS, Liga MX, Brazilian Serie A, Argentina Primera Division, Uruguay Primera Division">
 <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@DataMB_">
   <meta name="twitter:title" content="DataMB | Pro Subscription">
@@ -233,14 +234,14 @@ Cursor: pointer;
 
      
 .image-container {
-    border-radius: 20px;
-    
+    border-radius: 10px;
+    position: relative;
     overflow: hidden;
     
     margin: 0 auto; /* Center the container horizontally */
 
     /* Default width for desktop */
-    width: 81%;
+    width: 75%;
 }
 
 /* Media query for mobile devices */
@@ -291,6 +292,33 @@ Cursor: pointer;
   border-radius: 20px;
 }
 
+.image-container2 {
+    display: block;
+    max-width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 4vh;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: -10px;
+}
+
+.next {
+    right: -10px;
+}
+
 
     </style>
 <header class="header">
@@ -299,14 +327,14 @@ Cursor: pointer;
         <img src="https://datamb.football/logopro.png" alt="DataMB Pro" /></a>
 <div class="logo-text">
   <a href="http://datamb.football">
-    <span class="desktop-text">DataMB Pro</span>
+    <span class="desktop-text">Pro</span>
     <span class="mobile-text">Pro</span>
   </a>
 </div>
   </div>
   <nav class="navigation"> 
-    <a href="http://datamb.football/signup/" class="button">Subscribe for 8€/month</a>
-    <a href="http://datamb.football/pro/" class="button">Already a member?</a>
+    <a href="http://datamb.football/signup/" class="button">Sign up</a>
+    <a href="http://datamb.football/pro/" class="button">Log in</a>
   </nav><a href="https://twitter.com/datamb_" target="_blank" class="twitter-link">
     <svg width="25" height="24" fill="#bcbcbc" xmlns="http://www.w3.org/2000/svg">
       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -318,29 +346,57 @@ Cursor: pointer;
 </header>
 </head>
 <body><br>
-<br>
-   <div class="image-container">
-        <img src="https://datamb.football/imgpro.jpeg" alt="30+ leagues, multiple seasons, access to plot and search tools. Premier League, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Primeira Liga, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Superleague, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Serbian SuperLiga, Japanese J-League 1, Korean K-League 1, MLS, Liga MX, Brazilian Serie A, Argentina Primera Division, Uruguay Primera Division">
-    </div><br>
-<button id="whatsIncludedBtn" onclick="toggleImage()">Full features +</button>
-<br>
-<div id="imageContainer">
-  <img src="https://datamb.football/img.png" alt="">
-</div>
-
-<script>
-  var imageContainer = document.getElementById('imageContainer');
-
-  function toggleImage() {
-    if (imageContainer.style.display === 'none' || imageContainer.style.display === '') {
-      imageContainer.style.display = 'block';
-    } else {
-      imageContainer.style.display = 'none';
+<br><div class="image-container">
+    <div class="image-container2">
+      <img class="slides" src="https://datamb.football/PRO1/1.png" alt="">
+    </div>
+    <div class="image-container2">
+      <img class="slides" src="https://datamb.football/PRO1/2.png" alt="">
+    </div>
+        <div class="image-container2">
+      <img class="slides" src="https://datamb.football/PRO1/3.png" alt="">
+    </div>
+        <div class="image-container2">
+      <img class="slides" src="https://datamb.football/PRO1/4.png" alt="">
+    </div>
+        <div class="image-container2">
+      <img class="slides" src="https://datamb.football/PRO1/5.png" alt="">
+    </div>
+        <div class="image-container2">
+      <img class="slides" src="https://datamb.football/PRO1/6.png" alt="">
+    </div>
+            <div class="image-container2">
+      <img class="slides" src="https://datamb.football/PRO1/7.png" alt="">
+    </div>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
     }
+  
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+  
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slides");
+      if (slideIndex >= slides.length) {slideIndex = 0}
+      if (slideIndex < 0) {slideIndex = slides.length - 1}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slides[slideIndex].style.display = "block";  
+    }
+  </script>
 
-  }
-</script>
-
+  
+  
 
     <div class="terms">
 
@@ -388,6 +444,8 @@ Cursor: pointer;
             document.getElementById('termsModal').scrollIntoView();
         }
     </script>
+
+
 
 <footer class="footer">
    
