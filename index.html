@@ -524,23 +524,11 @@ Cursor: pointer;
         proceedBtn.addEventListener('click', () => {
         subscriptionFrame.src = 'https://datamb.football/signup';
 
-        // Check if the user is on a desktop device
-        if (window.innerWidth >= 1024) {
-            // Check if the page is scrolled to the top
-            if (window.scrollY === 0) {
-                // Scroll down by 200px
-                window.scrollBy(0, 650);
-            }
-        }
+        // Scroll to the subscription frame
+        subscriptionFrame.scrollIntoView({ behavior: 'smooth' });
     });
 
 
-        function expandTerms() {
-            expandableTerms.style.display = 'block';
-            expandBtn.style.display = 'none';
-            // Scroll to the expanded content for better user experience
-            document.getElementById('termsModal').scrollIntoView();
-        }
     </script>
 
 
