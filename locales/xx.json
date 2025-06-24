@@ -21,7 +21,14 @@
       "conditions": "Terms and Conditions"
     },
     "button": {
-      "subscribe": "SUBSCRIBE"
+      "subscribe": "FREE TRIAL"
+    },
+    "stripe": {
+      "trouble": "Trouble with Payment?",
+      "subscribe": "Subscribe via Stripe",
+      "monthly": "Monthly (€8)",
+      "6months": "6 Months (€44)",
+      "yearly": "1 Year (€80)"
     }
   }
 } 
