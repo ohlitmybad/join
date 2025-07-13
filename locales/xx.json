@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "DataMB | Pro Subscription",
-    "description": "Access 30+ leagues, more seasons, tools and metrics. Explore and visualize football data with DataMB Pro : Radar, Plot, Search, Rank, Index and Chat tools for Premier League, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Primeira Liga, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Superleague, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Polish Ekstraklasa, Serbian SuperLiga, Ukrainian VBET League, Russian Premier League, Greek Super League, MLS, Liga MX, Brazilian Serie A, Argentina Primera Division, Uruguay Primera Division, Colombian Primera A, Chilean Primera Division, Ecuadorian Serie A, Paraguayan Primera Division, Japanese J-League 1, Korean K-League 1"
+    "description": "Access 40 leagues, more seasons, tools and metrics. Explore and visualize football data with DataMB Pro : Radar, Plot, Search, Rank, Index and Chat tools for Premier League, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Primeira Liga, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Superleague, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Polish Ekstraklasa, Serbian SuperLiga, Ukrainian VBET League, Russian Premier League, Greek Super League, MLS, Liga MX, Brazilian Serie A, Argentina Primera Division, Uruguay Primera Division, Colombian Primera A, Chilean Primera Division, Ecuadorian Serie A, Paraguayan Primera Division, Japanese J-League 1, Korean K-League 1"
   },
   "common": {
     "nav": {
@@ -26,9 +26,9 @@
     "stripe": {
       "trouble": "Trouble with Payment?",
       "subscribe": "Subscribe via Stripe",
-      "monthly": "Monthly (€8)",
-      "6months": "6 Months (€44)",
-      "yearly": "1 Year (€80)"
+      "monthly": "Monthly (€9.99)",
+      "6months": "6 Months (€54.99)",
+      "yearly": "1 Year (€104.99)"
     }
   }
 } 
