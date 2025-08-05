@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "DataMB | Pro Aboneliği",
+    "description": "40 lig, daha fazla sezon, araçlar ve metrikler. DataMB Pro ile futbol verilerini keşfedin ve görselleştirin: Premier Lig, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Primeira Liga, Eredivisie, Scottish Premiership, Türk Süper Lig, Suudi Pro Lig, Belçika Jupiler Lig, Avusturya Bundesliga, İsviçre Süper Lig, İsveç Allsvenskan, Danimarka Süper Lig, Norveç Eliteserien, Çek Birinci Lig, Hırvat HNL, Polonya Ekstraklasa, Sırp Süper Lig, Ukrayna VBET Lig, Rus Premier Lig, Yunan Süper Lig, MLS, Liga MX, Brezilya Serie A, Arjantin Primera Division, Uruguay Primera Division, Kolombiya Primera A, Şili Primera Division, Ekvador Serie A, Paraguay Primera Division, Japon J-League 1, Kore K-League 1 için Radar, Plot, Search, Rank, Index ve Chat araçları"
+  },
+  "common": {
+    "nav": {
+      "signup": "Kayıt ol",
+      "login": "Giriş yap"
+    },
+    "footer": {
+      "rights": "© Tüm Hakları Saklıdır",
+      "privacy": "Gizlilik",
+      "contact": "İletişim",
+      "about": "Hakkında"
+    }
+  },
+  "join": {
+    "terms": {
+      "agree": "Şartlar ve Koşullar'ı",
+      "conditions": "kabul ediyorum."
+    },
+    "button": {
+      "subscribe": "ABONE OL"
+    },
+    "stripe": {
+      "trouble": "Ödeme ile Sorun mu Yaşıyorsunuz?",
+      "subscribe": "Stripe ile Abone Ol",
+      "monthly": "Aylık (€9.99)",
+      "6months": "6 Ay (€54.99)",
+      "yearly": "1 Yıl (€104.99)"
+    }
+  }
+} 

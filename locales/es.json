@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "DataMB | Suscripción Pro",
+    "description": "Accede a 40 ligas, más temporadas, herramientas y métricas. Explora y visualiza datos de fútbol con DataMB Pro: Radar, Gráfico, Búsqueda, Ranking, Índice y herramientas de Chat para Premier League, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Primeira Liga, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Superleague, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Polish Ekstraklasa, Serbian SuperLiga, Ukrainian VBET League, Russian Premier League, Greek Super League, MLS, Liga MX, Brasileña Serie A, Argentina Primera División, Uruguay Primera División, Colombiana Primera A, Chilena Primera División, Ecuatoriana Serie A, Paraguaya Primera División, Japonesa J-League 1, Coreana K-League 1"
+  },
+  "common": {
+    "nav": {
+      "signup": "Registrarse",
+      "login": "Iniciar sesión"
+    },
+    "footer": {
+      "rights": "© Todos los derechos reservados",
+      "privacy": "Privacidad",
+      "contact": "Contacto",
+      "about": "Acerca de"
+    }
+  },
+  "join": {
+    "terms": {
+      "agree": "Acepto los",
+      "conditions": "Términos y Condiciones"
+    },
+    "button": {
+      "subscribe": "SUSCRIBIRSE"
+    },
+    "stripe": {
+      "trouble": "¿Problemas con el pago?",
+      "subscribe": "Suscribirse vía Stripe",
+      "monthly": "Mensual (€9.99)",
+      "6months": "6 Meses (€54.99)",
+      "yearly": "1 Año (€104.99)"
+    }
+  }
+}
