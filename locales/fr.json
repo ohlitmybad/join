@@ -18,10 +18,10 @@
   "join": {
     "terms": {
       "agree": "J'accepte les",
-      "conditions": "Termes et Conditions"
+      "conditio ns": "Termes et Conditions"
     },
     "button": {
-      "subscribe": "ESSAI GRATUIT"
+      "subscribe": "S'ABONNER"
     },
     "stripe": {
       "trouble": "Problème de paiement?",
