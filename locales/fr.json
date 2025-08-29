@@ -18,7 +18,7 @@
   "join": {
     "terms": {
       "agree": "J'accepte les",
-      "conditio ns": "Termes et Conditions"
+      "conditions": "Termes et Conditions"
     },
     "button": {
       "subscribe": "S'ABONNER"
