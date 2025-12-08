@@ -29,6 +29,12 @@
       "monthly": "Monthly (€9.99)",
       "6months": "6 Months (€54.99)",
       "yearly": "1 Year (€104.99)"
-    }
+    },
+    "gift": {
+      "1month": "Gift 1 Month (€9.99)",
+      "3months": "Gift 3 Months (€28.99)",
+      "6months": "Gift 6 Months (€54.99)",
+      "1year": "Gift 1 Year (€104.99)"
   }
-} 
+}
+}  
