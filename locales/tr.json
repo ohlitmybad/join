@@ -29,6 +29,12 @@
       "monthly": "Aylık (€9.99)",
       "6months": "6 Ay (€54.99)",
       "yearly": "1 Yıl (€104.99)"
-    }
+    },
+    "gift": {
+      "1month": "1 Ay Hediye Et (€9.99)",
+      "3months": "3 Ay Hediye Et (€28.99)",
+      "6months": "6 Ay Hediye Et (€54.99)",
+      "1year": "1 Yıl Hediye Et (€104.99)"
   }
+}
 } 
