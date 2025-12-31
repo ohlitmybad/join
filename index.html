@@ -20,8 +20,6 @@
 <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
   <style>
 
-
-
       body {
           font-family: Arial, sans-serif;
       }
@@ -30,8 +28,22 @@
 }
       iframe {
           width: 100%;
+          max-width: 900px;
           height: 750px;
           border: none;
+          margin: 20px auto;
+          display: block;
+      }
+      
+      
+      @media (max-width: 600px) and (hover: none) {
+        iframe {
+          height: 790px;
+        }
+        
+        .terms-disclaimer {
+          font-size: 7px !important;
+        }
       }
 
 
@@ -196,18 +208,27 @@ margin-bottom: 0; /* Remove bottom margin from the paragraph elements */
 }
 
 body {
-background: #1a1a1a;
+  background: #1a1a1a;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-color: #DADADA;
-margin-left: 8px;
-font-family:Arial, Helvetica, sans-serif;
-font-size: 29px        
+  color: #DADADA;
+  margin-left: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 29px;
 }
 
 h2 {
-font-size: 21px        
+  font-size: 21px;
+}
+
+/* Main content spacing */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
           .desktop-text {
@@ -232,58 +253,103 @@ display: none;
 }
 }
 
-/* NEW: Container for proceedBtn and giftBtn to center them */
 #button-group-container {
-  display: flex; /* Enable flexbox */
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Align items vertically (good practice) */
-  gap: 15px; /* Add some space between the buttons */
-  margin: 0 auto; /* Center the container itself if it's narrower than the page */
-  max-width: 400px; /* Optional: limit width if needed, but not strictly necessary here */
-  position: relative; /* Add position relative to contain absolute positioned dropdown */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 10px;
+  max-width: 400px;
+  padding: 0 20px;
 }
 
 #proceedBtn {
-/* display: block;  REMOVED */
-/* margin: 0 auto; REMOVED */
-background-color: pink;
-Font-size: 22px;
-width: 318px;
-Height: 49px;
-border-radius: 12px;
-          border: 1px solid pink;
-Cursor: pointer;
-
+  background-color: #0099dd;
+  font-size: 20px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 320px;
+  height: 54px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
-#proceedBtn:disabled { cursor: not-allowed; opacity: 0.35; }
+
+#proceedBtn:hover {
+  background-color: #0088cc;
+}
+
+@media (max-width: 767px) {
+  #button-group-container {
+    padding: 0 15px;
+    margin: 25px auto 10px;
+  }
+  
+  #proceedBtn {
+    font-size: 18px;
+    height: 50px;
+  }
+}
 
 
 
-.terms {
-  text-align: center; /* Center-align the text within the container */
-  margin: auto;
-  margin-bottom: 5px; /* Use lowercase 'm' for margin-bottom */
-  font-size: 1em; /* Use lowercase 'f' for font-size */
-  color: #fff;
+.terms-disclaimer {
+  text-align: center;
+  margin: 12px auto;
+  font-size: 11px;
+  color: #888;
+  max-width: 400px;
+}
+
+.terms-disclaimer a {
+  color: #999;
+  text-decoration: underline;
+}
+
+.terms-disclaimer a:hover {
+  color: #aaa;
 }
 
    
 .image-container {
-  border-radius: 10px;
   position: relative;
-  overflow: hidden;
-  
-  margin: 0 auto; /* Center the container horizontally */
-
-  /* Default width for desktop */
+  overflow: visible; /* Allow arrows to show outside in margins */
+  margin: 30px auto;
   width: 75%;
+  max-width: 900px;
 }
 
 /* Media query for mobile devices */
 @media (max-width: 767px) {
   .image-container {
-      width: 99%;
-          height: 102%;
+    width: 95%;
+    margin: 20px auto;
+  }
+}
+
+.image-container2 {
+  overflow: hidden; /* Keep images clipped properly */
+  display: none !important;
+}
+
+.image-container2.active {
+  display: block !important;
+}
+
+.image-container2.active.animate {
+  animation: fadeIn 0.52s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -293,10 +359,6 @@ Cursor: pointer;
   height: auto;
 }
 
-.terms a {
-  color: #fff; /* Set the anchor color to white */
-  text-decoration: underline; /* Add underline to the link */
-}
 
 
 /* Center the "What's Included" button */
@@ -332,26 +394,49 @@ border-radius: 20px;
   max-width: 100%;
 }
 
-.prev, .next {
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  padding: 10px 14px;
+  margin-top: -2px;
   color: #ffffff;
   font-weight: bold;
-  font-size: 4vh;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.prev {
-  left: -10px;
-}
-
-.next {
+  font-size: 28px;
+  background: rgba(0, 0, 0, 0.3);
   right: -10px;
+  user-select: none; /* Prevent text selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border-radius: 6px;
+}
+
+.next:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* When arrow is outside the image (in margin) */
+.next.outside {
+  background: rgba(0, 0, 0, 0.6);
+  right: -80px;
+}
+
+.next.outside:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 767px) {
+  .next {
+    padding: 8px 12px;
+    font-size: 24px;
+    right: -5px;
+  }
+  
+  .next.outside {
+    right: -70px;
+  }
 }
 
 
@@ -427,59 +512,108 @@ font-size: 20px;
 display: block;
 }
 
-/* ---- GIFT STYLES MODIFIED ---- */
-
-#giftBtn {
-display: flex; /* Changed from block to flex */
-align-items: center;
-justify-content: center;
-background-color: #F8BD4F;
-font-size: 16px;
-min-width:56px;
-width: 56px; /* Explicit width for alignment reference */
-height: 49px;
-border-radius: 12px;
-border: 1px solid #e1a830;
-cursor: pointer;
-opacity: 0.5; /* disabled look */
-padding:8px;
+/* Stripe and Gift options styling */
+#stripeOption {
+  display: none;
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 0 20px;
 }
 
+.payment-options-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-#giftBtn:disabled { cursor: not-allowed; opacity: 0.35; }
-#giftBtn iconify-icon { font-size: 22px; }
+.stripe-section, .gift-section {
+  position: relative;
+  font-size: 13px;
+  color: #999;
+  display: inline-block;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 
-#giftDropdown {
-display:none; 
-position:absolute; 
-/* Remove left/transform and use right for right alignment relative to parent */
-right: 0; 
-top: 100%; /* Position right under the gift button/button-group-container */
-margin-top:10px;
-overflow:hidden;
-background:#232323; 
-border:2px solid #ffcc66; 
-border-radius:6px; 
-width: max-content; /* CHANGED: Set width to match content */
-z-index:1000; 
-box-shadow:0 4px 16px rgba(0,0,0,0.18);
+.gift-section {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
-#giftDropdown a {
-display:block; padding:10px 18px; 
-color:#fff; text-decoration:none; 
-border-bottom:1px solid #222;
-font-size: 14px;
+
+.gift-section::before {
+  content: "•";
+  color: #666;
+  font-size: 13px;
+  margin-right: 8px;
 }
-#giftDropdown a:last-child { border-bottom:none; }
-#giftDropdownTitle {
-font-size:14px; 
-padding:10px 14px; 
-color:#ffcc66; 
-font-weight:600; 
-text-align:center; 
-border-bottom:1px solid #ffcc66;
+
+.stripe-section a, .gift-section a {
+  color: #0099dd;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+  font-size: 13px;
 }
-#giftDropdown a:hover { background:#3a3a3a; }
+
+.stripe-section a:hover, .gift-section a:hover {
+  color: #0088cc;
+}
+
+#stripeDropdown, #giftDropdown {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100%;
+  margin-bottom: 10px;
+  background: #2a2a2a;
+  border: 1px solid #00aaee;
+  border-radius: 8px;
+  min-width: 240px;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  white-space: nowrap;
+}
+
+#stripeDropdown a, #giftDropdown a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  transition: background 0.2s ease;
+}
+
+#stripeDropdown a:first-child, #giftDropdown a:first-child {
+  border-radius: 8px 8px 0 0;
+}
+
+#stripeDropdown a:last-child, #giftDropdown a:last-child {
+  border-bottom: none;
+  border-radius: 0 0 8px 8px;
+}
+
+#stripeDropdown a:hover, #giftDropdown a:hover {
+  background: #3a3a3a;
+}
+
+@media (max-width: 767px) {
+  .payment-options-wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .gift-section::before {
+    display: none;
+  }
+  
+  #stripeDropdown, #giftDropdown {
+    min-width: 200px;
+  }
+}
 
   </style>
 <header class="header">
@@ -514,8 +648,9 @@ border-bottom:1px solid #ffcc66;
 </div>
 </header>
 </head>
-<body><br>
-<br><div class="image-container">
+<body>
+
+<div class="image-container">
   <div class="image-container2">
     <img class="slides" src="https://datamb.football/PRO1/1.webp" alt="">
   </div>
@@ -537,58 +672,96 @@ border-bottom:1px solid #ffcc66;
           <div class="image-container2">
     <img class="slides" src="https://datamb.football/PRO1/7.webp" alt="">
   </div>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  <a class="next">&#10095;</a>
 </div>
-<br>
+
+
 <script>
   var slideIndex = 0;
-  showSlides();
+  var nextArrow = null;
+  var imageContainer = null;
+
+  // Initialize after DOM loads
+  document.addEventListener('DOMContentLoaded', function() {
+    nextArrow = document.querySelector('.next');
+    imageContainer = document.querySelector('.image-container');
+    
+    // Add click event listener
+    if (nextArrow) {
+      nextArrow.addEventListener('click', function() {
+        plusSlides(1);
+      });
+    }
+    
+    // Position arrow on load and resize
+    positionArrow();
+    window.addEventListener('resize', positionArrow);
+    
+    // Initialize first slide
+    var slides = document.getElementsByClassName("image-container2");
+    if (slides.length > 0) {
+      slides[0].classList.add("active");
+    }
+  });
 
   function plusSlides(n) {
-    showSlides(slideIndex += n);
+    slideIndex += n;
+    showSlides(true); // With animation when clicking arrow
   }
 
   function currentSlide(n) {
-    showSlides(slideIndex = n);
+    slideIndex = n;
+    showSlides(true);
   }
 
-  function showSlides() {
+  function showSlides(withAnimation) {
     var i;
-    var slides = document.getElementsByClassName("slides");
+    var slides = document.getElementsByClassName("image-container2");
     if (slideIndex >= slides.length) {slideIndex = 0}
     if (slideIndex < 0) {slideIndex = slides.length - 1}
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].classList.remove("active");
+      slides[i].classList.remove("animate");
     }
-    slides[slideIndex].style.display = "block";  
+    slides[slideIndex].classList.add("active");
+    if (withAnimation) {
+      slides[slideIndex].classList.add("animate");
+    }
+  }
+
+  function positionArrow() {
+    if (!imageContainer || !nextArrow) return;
+    
+    // Get container position and dimensions
+    var containerRect = imageContainer.getBoundingClientRect();
+    var pageWidth = window.innerWidth;
+    
+    // Calculate margin space on right side
+    var rightMargin = pageWidth - containerRect.right;
+    
+    // Required space for arrow to be outside (arrow width ~50-60px)
+    var requiredSpace = 60;
+    
+    // Position RIGHT arrow - outside in margin if there's space, inside if not
+    if (rightMargin >= requiredSpace) {
+      nextArrow.classList.add('outside');
+    } else {
+      nextArrow.classList.remove('outside');
+    }
   }
 </script>
 
 
 
 
-  <div class="terms">
-
- 
-      <label class="terms-checkbox">
-          <input type="checkbox" id="agreeCheckbox">
-          <span data-i18n="join.terms.agree">I agree to the</span> <a href="https://datamb.football/tos" target="_blank" data-i18n="join.terms.conditions">Terms and Conditions</a>
-
-      </label>
-  </div><br>
-
   <div id="button-group-container">
-    <button id="proceedBtn" disabled data-i18n="join.button.subscribe">SUBSCRIBE</button>
+    
+    <button id="proceedBtn" data-i18n="join.button.subscribe">Subscribe</button>
+  </div>
 
-    <button id="giftBtn" disabled title="Gift a membership">
-      <iconify-icon icon="mdi:gift-outline"></iconify-icon>
-    </button>
-    <div id="giftDropdown" style="display:none;">
-      <a href="https://buy.stripe.com/9B6dR95ET7AP5hd37rcbC0g" data-i18n="join.gift.1month">Gift 1 Month (€9.99)</a>
-      <a href="https://buy.stripe.com/6oUcN50kzf3h10XbDXcbC0f" data-i18n="join.gift.3months">Gift 3 Months (€28.99)</a>
-      <a href="https://buy.stripe.com/5kQ7sL5ETcV97pl5fzcbC0e" data-i18n="join.gift.6months">Gift 6 Months (€54.99)</a>
-      <a href="https://buy.stripe.com/aFa3cv9V91cr5hd5fzcbC0d" data-i18n="join.gift.1year">Gift 1 Year (€104.99)</a>
-    </div>
+  <div class="terms-disclaimer">
+    <span data-i18n="join.terms.disclaimer">By subscribing, you agree to our</span> 
+    <a href="https://datamb.football/tos" target="_blank" data-i18n="join.terms.conditions">Terms and Conditions</a>
   </div>
 
   
@@ -596,69 +769,77 @@ border-bottom:1px solid #ffcc66;
   <br>
 
   <iframe id="subscriptionFrame" src="" frameborder="0"></iframe>
-  <div id="stripeOption" style="display:none; max-width: 600px; text-align: left;">
-    <span style="font-size: 14px; color: #b0e0ff; position: relative; margin-left: 5px;">
-      <span data-i18n="join.stripe.trouble">Trouble with Payment?</span> 
-      <a href="#" id="stripeDropLink" style="color: #00aaff; text-decoration: underline;" data-i18n="join.stripe.subscribe">Subscribe via Stripe</a>
-      <div id="stripeDropdown" style="display:none; position:absolute; left:100px; bottom:28px; background:#232323; border:1px solid #00aaff; border-radius:0px; min-width:220px; z-index:1000; box-shadow: 0 4px 16px rgba(0,0,0,0.18);">
-        <a href="https://buy.stripe.com/fZubJ1c3h9IXaBxgYhcbC0a" style="display:block; padding:10px 18px; color:#fff; text-decoration:none; border-bottom:1px solid #222;" data-i18n="join.stripe.monthly">Monthly (€9.99)</a>
-        <a href="https://buy.stripe.com/00weVdebpaN1aBx8rLcbC09" style="display:block; padding:10px 18px; color:#fff; text-decoration:none; border-bottom:1px solid #222;" data-i18n="join.stripe.6months">6 Months (€54.99)</a>
-        <a href="https://buy.stripe.com/5kQ5kDebpf3h7pl23ncbC08" style="display:block; padding:10px 18px; color:#fff; text-decoration:none;" data-i18n="join.stripe.yearly">1 Year (€104.99)</a>
+  
+  <div id="stripeOption">
+    <div class="payment-options-wrapper">
+      <div class="stripe-section">
+        <span data-i18n="join.stripe.trouble">Trouble with payment?</span> 
+        <a href="#" id="stripeDropLink" data-i18n="join.stripe.subscribe">Subscribe via Stripe</a>
+        <div id="stripeDropdown">
+          <a href="https://buy.stripe.com/fZubJ1c3h9IXaBxgYhcbC0a" data-i18n="join.stripe.monthly">Monthly (€9.99)</a>
+          <a href="https://buy.stripe.com/00weVdebpaN1aBx8rLcbC09" data-i18n="join.stripe.6months">6 Months (€54.99)</a>
+          <a href="https://buy.stripe.com/5kQ5kDebpf3h7pl23ncbC08" data-i18n="join.stripe.yearly">1 Year (€104.99)</a>
+        </div>
       </div>
-    </span>
-  </div><br>
+      
+      <div class="gift-section">
+        <span data-i18n="join.gift.question">For someone else?</span>
+        <a href="#" id="giftDropLink">
+          <span data-i18n="join.gift.link">Gift a membership</span>
+        </a>
+        <div id="giftDropdown">
+          <a href="https://buy.stripe.com/9B6dR95ET7AP5hd37rcbC0g" data-i18n="join.gift.1month">Gift 1 Month (€9.99)</a>
+          <a href="https://buy.stripe.com/6oUcN50kzf3h10XbDXcbC0f" data-i18n="join.gift.3months">Gift 3 Months (€28.99)</a>
+          <a href="https://buy.stripe.com/5kQ7sL5ETcV97pl5fzcbC0e" data-i18n="join.gift.6months">Gift 6 Months (€54.99)</a>
+          <a href="https://buy.stripe.com/aFa3cv9V91cr5hd5fzcbC0d" data-i18n="join.gift.1year">Gift 1 Year (€104.99)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+
 
   <script>
-      const agreeCheckbox = document.getElementById('agreeCheckbox');
       const proceedBtn = document.getElementById('proceedBtn');
       const subscriptionFrame = document.getElementById('subscriptionFrame');
-      const expandBtn = document.getElementById('expandBtn');
-      const expandableTerms = document.getElementById('expandableTerms');
-
-      // Gift elements
-      const giftBtn = document.getElementById('giftBtn');
-      const giftDropdown = document.getElementById('giftDropdown');
-
-      agreeCheckbox.addEventListener('change', () => {
-          proceedBtn.disabled = !agreeCheckbox.checked;
-          // enable/disable gift with same rule
-          giftBtn.disabled = !agreeCheckbox.checked;
-          giftBtn.style.opacity = agreeCheckbox.checked ? '1' : '0.5';
-      });
 
       proceedBtn.addEventListener('click', () => {
-      subscriptionFrame.src = 'https://datamb.football/sign-up';
-      subscriptionFrame.scrollIntoView({ behavior: 'smooth' });
-      document.getElementById('stripeOption').style.display = 'block';
-  });
+        subscriptionFrame.src = 'https://datamb.football/sign-up';
+        subscriptionFrame.scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('stripeOption').style.display = 'block';
+      });
 
-  const stripeDropLink = document.getElementById('stripeDropLink');
-  const stripeDropdown = document.getElementById('stripeDropdown');
+      const stripeDropLink = document.getElementById('stripeDropLink');
+      const stripeDropdown = document.getElementById('stripeDropdown');
 
-  stripeDropLink.addEventListener('click', function(e) {
-    e.preventDefault();
-    stripeDropdown.style.display = (stripeDropdown.style.display === 'block') ? 'none' : 'block';
-  });
+      stripeDropLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        stripeDropdown.style.display = (stripeDropdown.style.display === 'block') ? 'none' : 'block';
+        // Close gift dropdown if open
+        if (giftDropdown) giftDropdown.style.display = 'none';
+      });
 
-  document.addEventListener('click', function(event) {
-    if (!stripeDropLink.contains(event.target) && !stripeDropdown.contains(event.target)) {
-      stripeDropdown.style.display = 'none';
-    }
-  });
+      const giftDropLink = document.getElementById('giftDropLink');
+      const giftDropdown = document.getElementById('giftDropdown');
 
-  // Gift dropdown toggle
-  giftBtn.addEventListener('click', function(e) {
-    e.stopPropagation();
-    giftDropdown.style.display = (giftDropdown.style.display === 'block') ? 'none' : 'block';
-  });
+      if (giftDropLink && giftDropdown) {
+        giftDropLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          giftDropdown.style.display = (giftDropdown.style.display === 'block') ? 'none' : 'block';
+          // Close stripe dropdown if open
+          stripeDropdown.style.display = 'none';
+        });
+      }
 
-  // Close gift on outside click
-  document.addEventListener('click', function(event) {
-    if (!giftBtn.contains(event.target) && !giftDropdown.contains(event.target)) {
-      giftDropdown.style.display = 'none';
-    }
-  });
-
+      document.addEventListener('click', function(event) {
+        if (!stripeDropLink.contains(event.target) && !stripeDropdown.contains(event.target)) {
+          stripeDropdown.style.display = 'none';
+        }
+        if (giftDropLink && giftDropdown && !giftDropLink.contains(event.target) && !giftDropdown.contains(event.target)) {
+          giftDropdown.style.display = 'none';
+        }
+      });
   </script>
 
 
