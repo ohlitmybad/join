@@ -17,11 +17,11 @@
   },
   "join": {
     "terms": {
-      "agree": "Şartlar ve Koşullar'ı",
-      "conditions": "kabul ediyorum."
+      "disclaimer": "Abone olarak, bizim",
+      "conditions": "Şartlar ve Koşullar"
     },
     "button": {
-      "subscribe": "ABONE OL"
+      "subscribe": "Abone Ol"
     },
     "stripe": {
       "trouble": "Ödeme ile Sorun mu Yaşıyorsunuz?",
@@ -31,6 +31,8 @@
       "yearly": "1 Yıl (€104.99)"
     },
     "gift": {
+      "question": "Başka biri için mi?",
+      "link": "Üyelik hediye et",
       "1month": "1 Ay Hediye Et (€9.99)",
       "3months": "3 Ay Hediye Et (€28.99)",
       "6months": "6 Ay Hediye Et (€54.99)",
