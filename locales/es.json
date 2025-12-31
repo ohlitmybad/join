@@ -17,11 +17,11 @@
   },
   "join": {
     "terms": {
-      "agree": "Acepto los",
+      "disclaimer": "Al suscribirte, aceptas nuestros",
       "conditions": "Términos y Condiciones"
     },
     "button": {
-      "subscribe": "SUSCRIBIRSE"
+      "subscribe": "Suscribirse"
     },
     "stripe": {
       "trouble": "¿Problemas con el pago?",
@@ -31,6 +31,8 @@
       "yearly": "1 Año (€104.99)"
     },
     "gift": {
+      "question": "¿Para otra persona?",
+      "link": "Regalar una membresía",
       "1month": "Regalar 1 Mes (€9.99)",
       "3months": "Regalar 3 Meses (€28.99)",
       "6months": "Regalar 6 Meses (€54.99)",
