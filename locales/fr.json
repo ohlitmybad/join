@@ -17,11 +17,11 @@
   },
   "join": {
     "terms": {
-      "agree": "J'accepte les",
+      "disclaimer": "En vous abonnant, vous acceptez nos",
       "conditions": "Termes et Conditions"
     },
     "button": {
-      "subscribe": "S'ABONNER"
+      "subscribe": "S'abonner"
     },
     "stripe": {
       "trouble": "Problème de paiement?",
@@ -31,6 +31,8 @@
       "yearly": "104.99€ pour 1 an"
     },
       "gift": {
+        "question": "Pour quelqu'un d'autre ?",
+        "link": "Offrir un abonnement",
         "1month": "Offrir 1 Mois (€9.99)",
         "3months": "Offrir 3 Mois (€28.99)",
         "6months": "Offrir 6 Mois (€54.99)",
