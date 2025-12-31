@@ -17,20 +17,22 @@
   },
   "join": {
     "terms": {
-      "agree": "I agree to the",
+      "disclaimer": "By subscribing, you agree to our",
       "conditions": "Terms and Conditions"
     },
     "button": {
-      "subscribe": "SUBSCRIBE"
+      "subscribe": "Subscribe"
     },
     "stripe": {
-      "trouble": "Trouble with Payment?",
+      "trouble": "Trouble with payment?",
       "subscribe": "Subscribe via Stripe",
       "monthly": "Monthly (€9.99)",
       "6months": "6 Months (€54.99)",
       "yearly": "1 Year (€104.99)"
     },
     "gift": {
+      "question": "For someone else?",
+      "link": "Gift a membership",
       "1month": "Gift 1 Month (€9.99)",
       "3months": "Gift 3 Months (€28.99)",
       "6months": "Gift 6 Months (€54.99)",
