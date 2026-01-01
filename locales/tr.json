@@ -13,6 +13,10 @@
       "privacy": "Gizlilik",
       "contact": "İletişim",
       "about": "Hakkında"
+    },
+    "carousel": {
+      "trusted": "Personel tarafından güvenilen",
+      "andMore": "VE DAHA FAZLASI"
     }
   },
   "join": {
