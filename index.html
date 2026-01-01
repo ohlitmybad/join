@@ -207,6 +207,133 @@ color: black;
 margin-bottom: 0; /* Remove bottom margin from the paragraph elements */
 }
 
+/* League logos carousel */
+.leagues-carousel-section {
+  background: #1a1a1a;
+  padding: 10px 0 16px 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.leagues-carousel-section.hidden {
+  transform: translateY(100%);
+}
+
+.leagues-carousel-title {
+  text-align: center;
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 23px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.leagues-carousel-track {
+  display: flex;
+  animation: scroll 50s linear infinite;
+  width: max-content;
+}
+
+.league-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  min-width: 120px;
+}
+
+.league-logo-wrapper img {
+  height: 38px;
+  width: auto;
+}
+
+.league-logo-wrapper img[alt="Primeira Liga"] {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(8%) saturate(200%) hue-rotate(200deg);
+}
+
+.league-logo-wrapper.text-logo {
+  font-size: 7.5px;
+  color: #666;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.league-logo-wrapper.text-logo span {
+  margin-top: 1px;
+}
+
+.league-logo-wrapper.text-logo iconify-icon {
+  font-size: 26px;
+  color: #666;
+  display: block !important;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  min-height: 26px;
+  flex-shrink: 0;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 1;
+  transform: translateZ(0) translateY(2px);
+  will-change: auto;
+}
+
+.league-logo-wrapper.text-logo:hover {
+  color: #666;
+}
+
+.league-logo-wrapper.text-logo:hover iconify-icon {
+  color: #666;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .leagues-carousel-section {
+    padding: 10px 0 15px 0;
+  }
+  
+  .leagues-carousel-title {
+    font-size: 10px;
+    margin-bottom: 16px;
+    letter-spacing: 1.2px;
+  }
+  
+  .league-logo-wrapper {
+    padding: 0 12px;
+    min-width: 100px;
+  }
+  
+  .league-logo-wrapper img {
+    height: 30px;
+  }
+  
+  .league-logo-wrapper.text-logo {
+    font-size: 8px;
+  }
+}
+
 body {
   background: #1a1a1a;
   margin: 0;
@@ -419,12 +546,12 @@ border-radius: 20px;
 
 /* When arrow is outside the image (in margin) */
 .next.outside {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
   right: -80px;
 }
 
 .next.outside:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 767px) {
@@ -808,6 +935,12 @@ display: block;
         subscriptionFrame.src = 'https://datamb.football/sign-up';
         subscriptionFrame.scrollIntoView({ behavior: 'smooth' });
         document.getElementById('stripeOption').style.display = 'block';
+        
+        // Hide the leagues carousel
+        const leaguesCarousel = document.querySelector('.leagues-carousel-section');
+        if (leaguesCarousel) {
+          leaguesCarousel.classList.add('hidden');
+        }
       });
 
       const stripeDropLink = document.getElementById('stripeDropLink');
@@ -843,6 +976,43 @@ display: block;
   </script>
 
 
+
+<div class="leagues-carousel-section">
+
+  <div class="leagues-carousel-title" data-i18n="common.carousel.trusted">Trusted by staff in</div>
+  <div class="leagues-carousel-track">
+    <!-- First set of logos -->
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/PremierLeague.png" alt="Premier League"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/LaLiga.png" alt="La Liga"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/SerieA.png" alt="Serie A"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Bundesliga.png" alt="Bundesliga"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Ligue1.png" alt="Ligue 1"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Eredivisie.png" alt="Eredivisie"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/PrimeiraLiga.png" alt="Primeira Liga"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Belgium.png" alt="Belgian Pro League"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Brazil.png" alt="Brazil Série A"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Ligue2.png" alt="Ligue 2"></div>
+    <div class="league-logo-wrapper text-logo">
+      <iconify-icon icon="mdi:earth"></iconify-icon>
+      <span data-i18n="common.carousel.andMore">And More</span>
+    </div>
+    <!-- Duplicate set for infinite loop -->
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/PremierLeague.png" alt="Premier League"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/LaLiga.png" alt="La Liga"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/SerieA.png" alt="Serie A"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Bundesliga.png" alt="Bundesliga"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Ligue1.png" alt="Ligue 1"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Eredivisie.png" alt="Eredivisie"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/PrimeiraLiga.png" alt="Primeira Liga"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Belgium.png" alt="Belgian Pro League"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Brazil.png" alt="Brazil Série A"></div>
+    <div class="league-logo-wrapper"><img src="https://datamb.football/leaguelogos/Ligue2.png" alt="Ligue 2"></div>
+    <div class="league-logo-wrapper text-logo">
+      <iconify-icon icon="mdi:earth"></iconify-icon>
+      <span data-i18n="common.carousel.andMore">And More</span>
+    </div>
+  </div>
+</div>
 
 <footer class="footer">
  
