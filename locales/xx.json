@@ -13,6 +13,10 @@
       "privacy": "Privacy",
       "contact": "Contact",
       "about": "About"
+    },
+    "carousel": {
+      "trusted": "Trusted by staff in",
+      "andMore": "AND MORE"
     }
   },
   "join": {
