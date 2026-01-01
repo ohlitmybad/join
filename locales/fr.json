@@ -13,6 +13,10 @@
       "privacy": "Confidentialité",
       "contact": "Contact",
       "about": "À propos"
+    },
+    "carousel": {
+      "trusted": "Utilisé en",
+      "andMore": "ET PLUS"
     }
   },
   "join": {
