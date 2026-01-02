@@ -25,7 +25,8 @@
       "conditions": "Termes et Conditions"
     },
     "button": {
-      "subscribe": "S'abonner"
+      "subscribe": "S'abonner",
+      "freetrial": "Essai gratuit"
     },
     "stripe": {
       "trouble": "Problème de paiement?",
