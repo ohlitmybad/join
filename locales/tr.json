@@ -26,6 +26,7 @@
     },
     "button": {
       "subscribe": "Abone Ol"
+      "freetrial": "Ücretsiz deneme"
     },
     "stripe": {
       "trouble": "Ödeme ile Sorun mu Yaşıyorsunuz?",
