@@ -26,6 +26,7 @@
     },
     "button": {
       "subscribe": "Subscribe"
+      "freetrial": "Free trial"
     },
     "stripe": {
       "trouble": "Trouble with payment?",
