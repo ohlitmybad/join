@@ -25,7 +25,7 @@
       "conditions": "Şartlar ve Koşullar"
     },
     "button": {
-      "subscribe": "Abone Ol"
+      "subscribe": "Abone Ol",
       "freetrial": "Ücretsiz deneme"
     },
     "stripe": {
