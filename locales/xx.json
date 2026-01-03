@@ -25,7 +25,7 @@
       "conditions": "Terms and Conditions"
     },
     "button": {
-      "subscribe": "Subscribe"
+      "subscribe": "Subscribe",
       "freetrial": "Free trial"
     },
     "stripe": {
