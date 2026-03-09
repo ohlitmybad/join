@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "DataMB | Pro-Abo",
+    "description": "Zugang zu 40 Ligen, mehr Saisons, Tools und Metriken. Erkunde und visualisiere Fußballdaten mit DataMB Pro: Radar, Plot, Suche, Rangliste, Index und Chat-Tools für Premier League, Championship, La Liga, Liga Segunda, Bundesliga, 2. Bundesliga, Ligue 1, Ligue 2, Serie A, Serie B, Liga Portugal, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Super League, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Polish Ekstraklasa, Serbian SuperLiga, Ukrainian VBET League, Russian Premier League, Greek Super League, MLS, Liga MX, Brazilian Serie A, Argentina Primera Division, Uruguay Primera Division, Colombian Primera A, Chilean Primera Division, Ecuadorian Serie A, Paraguayan Primera Division, Japanese J-League 1, Korean K-League 1"
+  },
+  "common": {
+    "nav": {
+      "signup": "Registrieren",
+      "login": "Anmelden"
+    },
+    "footer": {
+      "rights": "© Alle Rechte vorbehalten",
+      "privacy": "Datenschutz",
+      "contact": "Kontakt",
+      "about": "Über uns"
+    },
+    "carousel": {
+      "trusted": "Vertraut von Mitarbeitern in",
+      "andMore": "UND MEHR"
+    }
+  },
+  "join": {
+    "terms": {
+      "disclaimer": "Mit dem Abo akzeptierst du unsere",
+      "conditions": "Allgemeinen Geschäftsbedingungen"
+    },
+    "button": {
+      "subscribe": "Abonnieren",
+      "freetrial": "Kostenlose Testversion"
+    },
+    "stripe": {
+      "trouble": "Zahlungsproblem?",
+      "subscribe": "Über Stripe abonnieren",
+      "monthly": "Monatlich (€9,99)",
+      "6months": "6 Monate (€54,99)",
+      "yearly": "1 Jahr (€104,99)"
+    },
+    "gift": {
+      "question": "Für jemand anderen?",
+      "link": "Mitgliedschaft verschenken",
+      "1month": "1 Monat verschenken (€9,99)",
+      "3months": "3 Monate verschenken (€28,99)",
+      "6months": "6 Monate verschenken (€54,99)",
+      "1year": "1 Jahr verschenken (€104,99)"
+    }
+  }
+}

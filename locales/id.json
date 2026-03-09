@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "DataMB | Langganan Pro",
+    "description": "Akses 40 liga, lebih banyak musim, alat dan metrik. Jelajahi dan visualisasikan data sepak bola dengan DataMB Pro: Radar, Plot, Cari, Peringkat, Indeks dan alat Chat untuk Premier League, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Liga Portugal, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Super League, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Polish Ekstraklasa, Serbian SuperLiga, Ukrainian VBET League, Russian Premier League, Greek Super League, MLS, Liga MX, Brazilian Serie A, Argentina Primera Division, Uruguay Primera Division, Colombian Primera A, Chilean Primera Division, Ecuadorian Serie A, Paraguayan Primera Division, Japanese J-League 1, Korean K-League 1"
+  },
+  "common": {
+    "nav": {
+      "signup": "Daftar",
+      "login": "Masuk"
+    },
+    "footer": {
+      "rights": "© Hak Cipta Dilindungi",
+      "privacy": "Privasi",
+      "contact": "Kontak",
+      "about": "Tentang"
+    },
+    "carousel": {
+      "trusted": "Dipercaya oleh staf di",
+      "andMore": "DAN LAINNYA"
+    }
+  },
+  "join": {
+    "terms": {
+      "disclaimer": "Dengan berlangganan, Anda setuju dengan",
+      "conditions": "Syarat dan Ketentuan kami"
+    },
+    "button": {
+      "subscribe": "Berlangganan",
+      "freetrial": "Uji coba gratis"
+    },
+    "stripe": {
+      "trouble": "Masalah pembayaran?",
+      "subscribe": "Berlangganan melalui Stripe",
+      "monthly": "Bulanan (€9,99)",
+      "6months": "6 Bulan (€54,99)",
+      "yearly": "1 Tahun (€104,99)"
+    },
+    "gift": {
+      "question": "Untuk orang lain?",
+      "link": "Hadiahkan keanggotaan",
+      "1month": "Hadiah 1 Bulan (€9,99)",
+      "3months": "Hadiah 3 Bulan (€28,99)",
+      "6months": "Hadiah 6 Bulan (€54,99)",
+      "1year": "Hadiah 1 Tahun (€104,99)"
+    }
+  }
+}

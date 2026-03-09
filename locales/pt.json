@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "DataMB | Subscrição Pro",
+    "description": "Acesso a 40 ligas, mais épocas, ferramentas e métricas. Explora e visualiza dados de futebol com DataMB Pro: Radar, Gráfico, Pesquisa, Ranking, Índice e ferramentas de Chat para Premier League, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Liga Portugal, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Super League, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Polish Ekstraklasa, Serbian SuperLiga, Ukrainian VBET League, Russian Premier League, Greek Super League, MLS, Liga MX, Brazilian Serie A, Argentina Primera Division, Uruguay Primera Division, Colombian Primera A, Chilean Primera Division, Ecuadorian Serie A, Paraguayan Primera Division, Japanese J-League 1, Korean K-League 1"
+  },
+  "common": {
+    "nav": {
+      "signup": "Registar",
+      "login": "Entrar"
+    },
+    "footer": {
+      "rights": "© Todos os direitos reservados",
+      "privacy": "Privacidade",
+      "contact": "Contacto",
+      "about": "Sobre"
+    },
+    "carousel": {
+      "trusted": "Confiado por profissionais em",
+      "andMore": "E MAIS"
+    }
+  },
+  "join": {
+    "terms": {
+      "disclaimer": "Ao subscrever, aceita os nossos",
+      "conditions": "Termos e Condições"
+    },
+    "button": {
+      "subscribe": "Subscrever",
+      "freetrial": "Teste gratuito"
+    },
+    "stripe": {
+      "trouble": "Problemas com o pagamento?",
+      "subscribe": "Subscrever via Stripe",
+      "monthly": "Mensal (€9,99)",
+      "6months": "6 Meses (€54,99)",
+      "yearly": "1 Ano (€104,99)"
+    },
+    "gift": {
+      "question": "Para outra pessoa?",
+      "link": "Oferecer uma subscrição",
+      "1month": "Oferecer 1 Mês (€9,99)",
+      "3months": "Oferecer 3 Meses (€28,99)",
+      "6months": "Oferecer 6 Meses (€54,99)",
+      "1year": "Oferecer 1 Ano (€104,99)"
+    }
+  }
+}

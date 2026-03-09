@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "title": "DataMB | Pro Subscription",
+    "description": "Access 40 leagues, more seasons, tools and metrics. Explore and visualize football data with DataMB Pro : Radar, Plot, Search, Rank, Index and Chat tools for Premier League, Championship, La Liga, Liga Segunda, Bundesliga, Bundesliga 2, Ligue 1, Ligue 2, Serie A, Serie B, Liga Portugal, Eredivisie, Scottish Premiership, Turkish Süper Lig, Saudi Pro League, Belgian Jupiler League, Austrian Bundesliga, Swiss Superleague, Swedish Allsvenskan, Danish Superliga, Norway Eliteserien, Czech First League, Croatian HNL, Polish Ekstraklasa, Serbian SuperLiga, Ukrainian VBET League, Russian Premier League, Greek Super League, MLS, Liga MX, Brazilian Serie A, Argentina Primera Division, Uruguay Primera Division, Colombian Primera A, Chilean Primera Division, Ecuadorian Serie A, Paraguayan Primera Division, Japanese J-League 1, Korean K-League 1"
+  },
+  "common": {
+    "nav": {
+      "signup": "Sign up",
+      "login": "Log in"
+    },
+    "footer": {
+      "rights": "© All Rights Reserved",
+      "privacy": "Privacy",
+      "contact": "Contact",
+      "about": "About"
+    },
+    "carousel": {
+      "trusted": "Trusted by staff in",
+      "andMore": "AND MORE"
+    }
+  },
+  "join": {
+    "terms": {
+      "disclaimer": "By subscribing, you agree to our",
+      "conditions": "Terms and Conditions"
+    },
+    "button": {
+      "subscribe": "Subscribe",
+      "freetrial": "Free trial"
+    },
+    "stripe": {
+      "trouble": "Trouble with payment?",
+      "subscribe": "Subscribe via Stripe",
+      "monthly": "Monthly (€9.99)",
+      "6months": "6 Months (€54.99)",
+      "yearly": "1 Year (€104.99)"
+    },
+    "gift": {
+      "question": "For someone else?",
+      "link": "Gift a membership",
+      "1month": "Gift 1 Month (€9.99)",
+      "3months": "Gift 3 Months (€28.99)",
+      "6months": "Gift 6 Months (€54.99)",
+      "1year": "Gift 1 Year (€104.99)"
+  }
+}
+}  
